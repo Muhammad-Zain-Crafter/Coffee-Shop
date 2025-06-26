@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo.png" alt="logo" class="logo-img">
+            </div>
+            <nav class="nav" id="navMenu">
+                <a href="#Home" class="nav-link">Home</a>
+                <a href="#About" class="nav-link">About Us</a>
+                <a href="#Products" class="nav-link">Products</a>
+                <a href="#Customers" class="nav-link">Customers</a>
+            </nav>
+            <div class="cart" id="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <button class="cart-button" id="cartButton">Cart</button>
+            </div>
+            <!-- Cart Popup -->
+            <div id="cartPopup" class="cart-popup">
+                <h2>Cart</h2>
+                <ul id="cartList"></ul>
+                <button id="cartClose">Close</button>
+            </div>
+            <button class="menu-button" id="menuButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    <!-- Home -->
+    <div class="container" id="Home">
+        <div class="content-sec">
+        <div class="left">
+            <h1 class="heading">
+                START YOUR DAY<br>WITH COFFEE
+            </h1>
+            <p class="para">
+                A coffee shop is a cozy and inviting space where people gather to enjoy freshly brewed coffee, tea,
+                and a variety of snacks. It serves as a popular spot for students, professionals, and friends to
+                work, study, or relax. The aroma of roasted coffee beans fills the air, creating a warm and
+                comforting atmosphere. 
+            </p>
+            <button class="shop">Shop Now</button>
+        </div>
+        <div class="right">
+            <img src="main.png" alt="main" class="main-img">
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div class="about-sec" id="About">
+        <div class="about-content">
+        <div class="box-1">
+            <img src="about.jpg" alt="about" class="about-img">
+        </div>
+        <div class="box-2">
+            <h1 class="about-heading">
+                Our History
+            </h1>
+            <p class="about-para">
+                In 2010, we started with a simple dream—to bring people together over a great
+                 cup of coffee. Our first shop was a small, cozy café tucked away in a quiet 
+                 street, where we served freshly brewed coffee with passion and care.
+            </p>
+            <p class="about-para">
+                As word spread about our rich, aromatic coffee and warm atmosphere, we became a
+                local favorite. By 2015, we expanded our menu, introducing handcrafted lattes,
+                fresh pastries, and signature blends that kept customers coming back for more.
+            </p>
+            <p class="about-para">
+                We believe that great coffee starts with great beans. That’s why, in 2018, we
+                began sourcing ethically grown, high-quality coffee beans from local farmers,
+                ensuring that every cup supports sustainable farming and delivers the finest 
+                taste.
+            </p>
+            <button class="about-button">
+                Learn More
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Product -->
+   <div class="products" id="Products">
+    <div class="products-content">
+        <h1 class="product-heading">
+            Our Popular Products
+        </h1>
+        <div class="product-grid">
+            <div class="product">
+                <img src="p1.png" class="product-img" alt="product-1">
+                <h2>Americano Pure</h2>
+                <div class="p">
+                <p class="price">Rs 250</p>
+                <button class="product-btn" data-product="Americano Pure">
+                    ADD TO CART
+                </button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="p2.png" class="product-img" alt="product-2">
+                <h2>Espresso</h2>
+                <div class="p">
+                <p class="price">Rs 350</p>
+                <button class="product-btn" data-product="Espresso">
+                    ADD TO CART
+                </button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="p3.png" class="product-img" alt="product-3">
+                <h2>Cappuccino</h2>
+                <div class="p">
+                <p class="price">Rs 400</p>
+                <button class="product-btn" data-product="Cappuccino">
+                    ADD TO CART
+                </button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="p4.png" class="product-img" alt="product-4">
+                <h2>Latte</h2>
+                <div class="p">
+                <p class="price">Rs 350</p>
+                <button class="product-btn" data-product="Latte">
+                    ADD TO CART
+                </button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="p5.png" class="product-img" alt="product-5">
+                <h2>Mocha</h2>
+                <div class="p">
+                <p class="price">Rs 450</p>
+                <button class="product-btn" data-product="Mocha">
+                    ADD TO CART
+                </button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="p6.png" class="product-img" alt="product-6">
+                <h2>Macchiato</h2>
+                <div class="p">
+                <p class="price">Rs 500</p>
+                <button class="product-btn" data-product="Macchiato">
+                    ADD TO CART
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- Customer -->
+   <div class="customers-sec" id="Customers">
+    <h1>OUR CUSTOMERS</h1>
+    <div class="customers">
+        <div class="customer">
+            <p class="customer-para">
+                "I’ve tried many coffee brands, but this one is hands down my favorite. The 
+                aroma, the flavor, and the smoothness—everything is perfect!"
+            </p>
+            <h2 class="name">Sophia R</h2>
+            <img src="rev1.jpg" alt="review">
+        </div>
+        <div class="customer">
+            <p class="customer-para"></p>
+                "I can’t start my day without this coffee. The rich taste and bold flavor 
+                give me the perfect energy boost!"
+            </p>
+            <h2 class="name">Michael T</h2>
+            <img src="rev2.jpg" alt="review">
+        </div>
+        <div class="customer">
+            <p class="customer-para">
+                "I was surprised by how fresh the coffee was when it arrived. The packaging was
+                 neat, and the taste was just as described—smooth and full-bodied!"
+            </p>
+            <h2 class="name">Emma W</h2>
+            <img src="rev3.jpg" alt="review">
+        </div>
+    </div>
+   </div>
+   <!-- Review -->
+  <section id="reviews">
+    <h2 class="section-heading">Leave a Review</h2>
+    <form id="reviewForm" class="review-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <textarea id="message" placeholder="Write your review..." required></textarea>
+        <button type="submit">Submit Review</button>
+    </form>
+        <div id="reviewList" class="review-list">
+            <!-- Submitted reviews will appear here! -->
+        </div>
+  </section>
+  <!-- Footer -->
+   <div class="fotter-container">
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="filler-text"><p>Coffee Shop</p></div>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram social-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter social-icon" ></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin social-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-windows social-icon"></i></a>
+            </div>
+        </div>
+            <div class="footer-grid">
+                <!-- column-1 -->
+                <div class="column">
+                    <div class="grid-heading">
+                        Products
+                    </div>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#overview" class="footer-link">Overview</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Solutions</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Customers</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column-2 -->
+                <div class="column">
+                    <div class="grid-heading">
+                        Company
+                    </div>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#overview" class="footer-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Investor</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Press</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column-3 -->
+                <div class="column">
+                    <div class="grid-heading">
+                        Support
+                    </div>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#overview" class="footer-link">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Chat</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+    <div class="copyright">
+        2025 - Present Coffee Shop. All rights reserved.
+    </div>
+</div>
+    <script src="basic.js"></script>
+</body>
+</html>
